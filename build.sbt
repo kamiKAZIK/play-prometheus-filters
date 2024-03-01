@@ -1,9 +1,9 @@
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
 name := "play-prometheus-filters"
-organization := "io.github.jyllands-posten"
+organization := "io.github.kamiKAZIK"
 
-version := "0.6.2-SNAPSHOT"
+version := "0.7.0-SNAPSHOT"
 
 lazy val root = (project in file("."))
 
@@ -11,10 +11,10 @@ lazy val root = (project in file("."))
 publishTo := sonatypePublishToBundle.value
 credentials += Credentials(Path.userHome / ".sbt" / ".credentials.sonatype")
 
-scalaVersion := "2.13.8"
+scalaVersion := "2.13.13"
 crossScalaVersions := Seq(scalaVersion.value, "2.12.15")
 
-val playVersion = "2.8.13"
+val playVersion = "3.0.1"
 val prometheusClientVersion = "0.9.0"
 
 libraryDependencies ++= Seq(
@@ -23,15 +23,15 @@ libraryDependencies ++= Seq(
   "io.prometheus" % "simpleclient_servlet" % prometheusClientVersion,
 
   // Play libs. Are provided not to enforce a specific version.
-  "com.typesafe.play" %% "play" % playVersion % Provided,
-  "com.typesafe.play" %% "play-guice" % playVersion % Provided,
+  "org.playframework" %% "play" % playVersion % Provided,
+  "org.playframework" %% "play-guice" % playVersion % Provided,
 
   // This library makes some Scala 2.13 APIs available on Scala 2.11 and 2.12.
-  "org.scala-lang.modules" %% "scala-collection-compat" % "2.6.0"
+  "org.scala-lang.modules" %% "scala-collection-compat" % "2.11.0"
 )
 
 libraryDependencies ++= Seq(
-  "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
-  "org.scalatestplus" %% "mockito-3-4" % "3.2.10.0" % Test,
+  "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test,
+  "org.scalatestplus" %% "mockito-4-2" % "3.2.11.0" % Test,
   "org.mockito" % "mockito-core" % "4.2.0" % Test
 )

@@ -1,8 +1,8 @@
 package com.github.stijndehaes.playprometheusfilters.filters
 
-import akka.stream.Materializer
 import com.github.stijndehaes.playprometheusfilters.metrics.{CounterRequestMetrics, LatencyRequestMetrics, RequestMetric, RequestMetricBuilder}
 import io.prometheus.client.Collector
+import org.apache.pekko.stream.Materializer
 import play.api.Configuration
 import play.api.mvc.{Filter, RequestHeader, Result}
 

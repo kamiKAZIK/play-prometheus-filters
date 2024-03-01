@@ -1,13 +1,14 @@
 package com.github.stijndehaes.playprometheusfilters.controllers
 
-import akka.util.ByteString
 import com.github.stijndehaes.playprometheusfilters.utils.WriterAdapter
-import javax.inject._
-import play.api.mvc._
 import io.prometheus.client.CollectorRegistry
 import io.prometheus.client.exporter.common.TextFormat
+import org.apache.pekko.util.ByteString
 import org.slf4j.LoggerFactory
 import play.api.http.HttpEntity
+import play.api.mvc._
+
+import javax.inject._
 
 /**
   * A Play controller implementation to return collected metrics.

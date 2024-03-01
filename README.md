@@ -8,25 +8,25 @@ This play library provides four types of filters that collect prometheus metrics
 Two of these filters are also compatible with the [lagom framework](https://github.com/lagom/lagom).
 
 A simple hello world application using these filters can be found in the following repo:
-https://github.com/Jyllands-Posten/play-prometheus-filters-example-app
+https://github.com/kamiKAZIK/play-prometheus-filters-example-app
 
 To use the library add the following to you build.sbt:
 
 ```scala
-libraryDependencies += "io.github.jyllands-posten" %% "play-prometheus-filters" % "0.6.1"
+libraryDependencies += "io.github.kamikazik" %% "play-prometheus-filters" % "0.6.1"
 
 ```
-This latest version supports Play 2.8.
+This latest version supports Play 3.0.
 For more info on play version compatibility see the releases matrix.
 
 
 ## Releases
 
-| Release     | Play version |
-| :---------- | :----------- |
-| 0.6.x       | 2.8.x        |
+| Release | Play version |
+|:--------|:-------------|
+| 0.7.x   | 3.0.x        |
 
-For earlier play versions, see the original repository [play-prometheus-filters](https://github.com/stijndehaes/play-prometheus-filters)
+For earlier play versions, see the original repository [play-prometheus-filters](https://github.com/Jyllands-Posten/play-prometheus-filters)
 
 ## The filters
 
