@@ -1,7 +1,7 @@
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
 name := "play-prometheus-filters"
-organization := "io.github.kamiKAZIK"
+organization := "io.github.kamikazik"
 
 version := "0.7.0"
 
