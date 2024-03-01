@@ -9,6 +9,7 @@ scmInfo := Some(
     "scm:git:git@github.com:kamiKAZIK/play-prometheus-filters.git"
   )
 )
+sonatypeCredentialHost := "s01.oss.sonatype.org"
 
 developers := List(
   Developer(id="SoerenSilkjaer", name="Søren Valentin Silkjær", email="soren.hansen@jp.dk", url=url("https://github.com/SoerenSilkjaer")),
