@@ -5,11 +5,7 @@ organization := "io.github.kamikazik"
 
 version := "0.7.0"
 
-lazy val root = (project in file("."))
-
-// All publishing configuration resides in sonatype.sbt
-publishTo := sonatypePublishToBundle.value
-credentials += Credentials(Path.userHome / ".sbt" / ".credentials.sonatype")
+lazy val root = project in file(".")
 
 scalaVersion := "2.13.13"
 
@@ -31,3 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalatestplus" %% "mockito-4-2" % "3.2.11.0" % Test,
   "org.mockito" % "mockito-core" % "4.2.0" % Test
 )
+
+sonatypeCredentialHost := "s01.oss.sonatype.org"
+
+publishTo := sonatypePublishToBundle.value
